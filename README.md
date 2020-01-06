@@ -1,5 +1,4 @@
-# <img src="images\Messier.jpg" alt="Messier" style="zoom:150%;"/>Messier
-Simulates the formation of globular star clusters.
+# <img src="images\Messier.jpg" alt="Messier" style="zoom:150%;"/> Messier
 
 MESSIER is an application which simulates the formation of globular star clusters. Vary the number of stars and watch how clustering patterns remarkably similar to true astronomical
 objects evolve over time.
