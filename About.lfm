@@ -1,0 +1,136 @@
+object AboutBox: TAboutBox
+  Left = 200
+  Height = 213
+  Top = 108
+  Width = 298
+  BorderStyle = bsDialog
+  Caption = 'About Messier'
+  ClientHeight = 213
+  ClientWidth = 298
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Pitch = fpVariable
+  OnCreate = FormCreate
+  Position = poScreenCenter
+  LCLVersion = '2.0.4.0'
+  object Panel1: TPanel
+    Left = 8
+    Height = 161
+    Top = 8
+    Width = 281
+    BevelInner = bvRaised
+    BevelOuter = bvLowered
+    ClientHeight = 161
+    ClientWidth = 281
+    TabOrder = 0
+    object ProgramIcon: TImage
+      Left = 8
+      Height = 32
+      Top = 8
+      Width = 32
+      AutoSize = True
+      Picture.Data = {
+        055449636F6EFE0200000000010001002020100000000000E802000016000000
+        2800000020000000400000000100040000000000800200000000000000000000
+        0000000000000000000000000000800000800000008080008000000080008000
+        8080000080808000C0C0C0000000FF0000FF000000FFFF00FF000000FF00FF00
+        FFFF0000FFFFFF00666666666666666666666666666666666666666666666666
+        6666666666666666666666F666666666F6666666666666666666666F6666FF6F
+        6666F6FFF666666666666F666F6666F6F6F6666F6F666666666666F6FF66F6FF
+        6FF6F6FFFFFF666666666FF6F6666F666666FF6F6FF6F666666666F6F666FF66
+        666FFFF6FF6666666666FFF66666F6FFF6FF66666F6F6F66666666FF666FFFFF
+        FFF6FFF6666666666666F6F66666F66FFFFFFFF6F6666F66F6666FFF66F6F6FF
+        FFFF66FFFF6F6666666666FF6FFF6FFFFFFFF66FFF666666FF66FFFFFFFFFF66
+        66FFFF6FFFF6FF666F6666FFFF6FFF66666FF6FF6FFF6F66FF6666FFF6FFF666
+        666FFF66666FF6666FF6666FF66FF666666FFF66F666FF666F6666FF666FF666
+        666FF6FFF6666F666FFF66F6FFFFFF6666FFFF6FFFF66FF6666F6F6F6F66FFFF
+        FFFF6F6F6F66F6F6666FF66FFFF66FFFFFFFF6FFFFF6F6666666FFF6FFFFF6FF
+        FF6FFFFFFFF6F66666666FFFFF6F6FF666FFFFF6FF666666666666FFF6FFFFFF
+        F6FFFF6FFFF666666666666F6F6F6FF6FFFFF6F6F6F6666666666666FFF6666F
+        F6F6FF66FFF666666666666666FF6FFFFF6FF666FF6666666666F66FF666FFF6
+        F66F6666F6F666666F6FFFF6FFFFFFFF666F66FFFFF66666666FF6FF6FFFF666
+        66666FFF6666666666666666666666666666F6F6666666666666666666666666
+        6666666666666666000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000
+      }
+      Stretch = True
+    end
+    object ProductName: TLabel
+      Left = 110
+      Height = 23
+      Top = 9
+      Width = 78
+      Caption = 'Messier'
+      Font.Color = clWhite
+      Font.Height = -19
+      Font.Name = 'Arial'
+      Font.Pitch = fpVariable
+      Font.Style = [fsBold, fsItalic]
+      ParentColor = False
+      ParentFont = False
+    end
+    object Version: TLabel
+      Left = 120
+      Height = 13
+      Top = 31
+      Width = 59
+      Caption = 'Version 1.06'
+      ParentColor = False
+    end
+    object Copyright: TLabel
+      Left = 46
+      Height = 13
+      Top = 103
+      Width = 207
+      Caption = 'Copyright © 1998-2019 Mauro J. Cavalcanti'
+      ParentColor = False
+    end
+    object Comments: TLabel
+      Left = 6
+      Height = 39
+      Top = 49
+      Width = 269
+      Alignment = taCenter
+      Caption = 'Simulates the evolution of globular clusters. You can vary'#13#10'the number of stars and watch large patterns evolve over'#13#10'time (millions of years per second). Fast CPU advisable!'
+      ParentColor = False
+      WordWrap = True
+    end
+    object EMail: TLabel
+      Left = 99
+      Height = 13
+      Top = 137
+      Width = 101
+      Caption = 'maurobio@gmail.com'
+      Font.Color = clBlue
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Pitch = fpVariable
+      Font.Style = [fsUnderline]
+      ParentColor = False
+      ParentFont = False
+      OnClick = EMailClick
+    end
+    object City: TLabel
+      Left = 93
+      Height = 13
+      Top = 117
+      Width = 112
+      Caption = 'Rio de Janeiro, BRASIL'
+      ParentColor = False
+    end
+  end
+  object OKButton: TButton
+    Left = 112
+    Height = 25
+    Top = 180
+    Width = 75
+    Caption = 'OK'
+    Default = True
+    ModalResult = 1
+    TabOrder = 1
+  end
+end
