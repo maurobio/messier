@@ -16,7 +16,7 @@
 {   along with this program. If not, see <http://www.gnu.org/licenses/>.   }
 {                                                                          }
 {   The latest versions will be made available directly over the           }
-{   Internet from my Web page at <http://sites.google.com/site/maurobio>   }
+{   Internet from my Web page at <http://github.com/maurobio>              }
 {                                                                          }
 {   If anyone makes any significant alterations or has any bright ideas    }
 {   to enhance this program then please forward them to me so I can keep   }
@@ -33,8 +33,8 @@ unit Main;
 interface
 
 uses
-  Windows, SysUtils, Classes, Graphics, Controls, Forms, Dialogs,
-  ExtCtrls, Menus, Clipbrd;
+  {$IFDEF WINDOWS}Windows,{$ENDIF} SysUtils, Classes, Graphics, Controls, Forms,
+  Dialogs, ExtCtrls, Menus, Clipbrd, LCLIntf;
 
 type
   TMainForm = class(TForm)
@@ -80,7 +80,7 @@ implementation
 
 uses About;
 
-{$R *.LFM}
+{$R *.lfm}
 
 procedure TMainForm.Iterate; { Newton-Raphson iteration }
 var

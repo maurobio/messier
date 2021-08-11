@@ -8,7 +8,7 @@ uses
   Main in 'Main.pas' {MainForm},
   About in 'About.pas' {AboutBox};
 
-{$R *.RES}
+{$R *.res}
 
 begin
   Application.Initialize;

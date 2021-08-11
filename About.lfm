@@ -11,9 +11,8 @@ object AboutBox: TAboutBox
   Font.Height = -11
   Font.Name = 'MS Sans Serif'
   Font.Pitch = fpVariable
-  OnCreate = FormCreate
   Position = poScreenCenter
-  LCLVersion = '2.0.4.0'
+  LCLVersion = '2.0.8.0'
   object Panel1: TPanel
     Left = 8
     Height = 161
@@ -65,7 +64,7 @@ object AboutBox: TAboutBox
       Top = 9
       Width = 78
       Caption = 'Messier'
-      Font.Color = clWhite
+      Font.Color = clTeal
       Font.Height = -19
       Font.Name = 'Arial'
       Font.Pitch = fpVariable
@@ -100,6 +99,7 @@ object AboutBox: TAboutBox
       WordWrap = True
     end
     object EMail: TLabel
+      Cursor = crHandPoint
       Left = 99
       Height = 13
       Top = 137

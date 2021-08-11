@@ -3,11 +3,8 @@ unit About;
 interface
 
 uses
-  Windows, SysUtils, Classes, Graphics, Forms, Controls, StdCtrls,
-  Buttons, ExtCtrls, ShellAPI;
-
-const
-  crHandCur = 8888;
+  SysUtils, Classes, Graphics, Forms, Controls, StdCtrls,
+  Buttons, ExtCtrls, LCLIntf;
 
 type
   TAboutBox = class(TForm)
@@ -20,7 +17,6 @@ type
     OKButton: TButton;
     EMail: TLabel;
     City: TLabel;
-    procedure FormCreate(Sender: TObject);
     procedure EMailClick(Sender: TObject);
   private
     { Private declarations }
@@ -33,21 +29,11 @@ var
 
 implementation
 
-{$R *.LFM}
-
-procedure TAboutBox.FormCreate(Sender: TObject);
-var
-  HC: HCursor;
-begin
-  HC := LoadCursor(HInstance, PChar(8888));
-  Screen.Cursors[crHandCur] := HC;
-  EMail.Cursor := crHandCur;
-end;
+{$R *.lfm}
 
 procedure TAboutBox.EMailClick(Sender: TObject);
 begin
-  ShellExecute(Application.Handle, 'open', 'mailto:maurobio@gmail.com',
-    nil, nil, SW_NORMAL);
+  OpenURL('mailto:maurobio@gmail.com');
 end;
 
 end.
