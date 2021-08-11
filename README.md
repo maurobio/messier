@@ -3,12 +3,11 @@
 MESSIER is an application which simulates the formation of globular star clusters. Vary the number of stars and watch how clustering patterns remarkably similar to true astronomical
 objects evolve over time.
 
-This program has been originally developed using Borland Delphi 2.0/3.0 for Windows '95 and later ported to Free Pascal 3.0/Lazarus 2.0 for Windows 10; it is based on a 
-BASIC version that appeared in the "Astronomical Computing" section of the _Sky & Telescope_ Magazine, April 1986, p. 398.
+This program has been originally developed using Borland Delphi 2.0/3.0 for Windows '95 and later ported to Free Pascal 3.0/Lazarus 2.0 for Windows 10 and Ubuntu Linux; it is based on a BASIC version that appeared in the "Astronomical Computing" section of the _Sky & Telescope_ Magazine, April 1986, p. 398.
 
 To install, unzip the distribution file MESSIER.ZIP, using an output directory of your choice (e.g. c:\messier). 
 
-To start the program, double-click the file MESSIER.EXE From Windows Explorer. Choose the "Run" option from the main menu to execute a simulation.
+To start the program, double-click the file Messier.exe from Windows Explorer or Messier from your Linux distro file browser. Choose the "Run" option from the main menu to execute a simulation.
 
 This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.                                                                                                           
 
