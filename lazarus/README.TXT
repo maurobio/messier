@@ -76,5 +76,4 @@ Version 1.04, 18/07/1998 - Added a call to the ProcessMessages method of the
 Version 1.05, 16/08/1998 - Fixed a bug that prevented the clearing of the main
                            window's display area when no stars was selected for
                            plotting. Recompiled in Delphi 3.0.
-Version 2.00, 28/10/2019 - Converted to FreePascal 3.0.4/Lazarus 2.0.2. Dropped
-			   support to Delphi.
+Version 2.00, 28/10/2019 - Converted to FreePascal 3.0.4/Lazarus 2.0.2.
