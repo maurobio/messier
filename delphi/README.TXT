@@ -69,3 +69,5 @@ Version 1.04, 18/07/98 - Added a call to the ProcessMessages method of the
 Version 1.05, 16/08/98 - Fixed a bug that prevented the clearing of the main
                          window's display area when no stars was selected for
                          plotting. Recompiled in Delphi 3.0.
+Version 1.06, 02/06/23 - Recompiled in Delphi 7.0.
+						
