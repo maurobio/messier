@@ -21,5 +21,5 @@ This program is distributed in the hope that it will be useful,        but WITHO
 - Version 1.03, 28/06/1998 - Added support to the orange color when plotting stars, with a call to the RGB Windows API function.
 - Version 1.04, 18/07/1998 - Added a call to the ProcessMessages method of the application's main window to yield for other events when plotting a large number of stars. Added a call to the globular cluster plotting                          procedure to the OnPaint and the OnResize                       events. Beautified.
 - Version 1.05, 16/08/1998 - Fixed a bug that prevented the clearing of the main window's display area when no stars was selected for plotting. Recompiled in Delphi 3.0.
-- Version 1.06, 28/10/2019 - Converted to FreePascal 3.0.4/Lazarus 2.0.2.  
+- Version 2.00: 28/10/2019 - Converted to FreePascal 3.0.4/Lazarus 2.0.2.  
 - Version 1.06: 02/06/2023 - Recompiled in Delphi 7.0.
